@@ -8,7 +8,7 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-009726b835c24a3aa"
+  ami                    = "ami-0e472ba40eb589f49"
   instance_type          = "t2.micro"
   key_name               = "route53"
   monitoring             = true
