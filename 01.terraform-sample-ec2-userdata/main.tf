@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "us-east-1"
 }
 
 module "ec2_instance" {
@@ -10,10 +10,10 @@ module "ec2_instance" {
 
   ami                    = "ami-009726b835c24a3aa"
   instance_type          = "t2.micro"
-  key_name               = "test5"
+  key_name               = "route53"
   monitoring             = true
-  vpc_security_group_ids = ["sg-03c75c0257dc82931"]
-  subnet_id              = "subnet-0bd9d993f878cb57c"
+  vpc_security_group_ids = ["sg-067fe1167fada2983"]
+  subnet_id              = "subnet-0ae6d148a8430e69e"
     user_data = <<-EOF
               #!/bin/bash
               echo "Hello, World" > index.html
