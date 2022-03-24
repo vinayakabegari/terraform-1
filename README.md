@@ -2,7 +2,8 @@
 
 
 
-Step1- Register HashiCorp GPG keys$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+Step1- Register HashiCorp GPG keys
+$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 $ sudo apt install curl
 
 Step2- Add HashiCorp package repository
@@ -19,4 +20,3 @@ $ sudo apt install terraform
 
 # Check version of Terraform 
 $ terraform -v
-![image](https://user-images.githubusercontent.com/97225776/159884288-5ad060e8-02b8-469e-a126-146732111939.png)
