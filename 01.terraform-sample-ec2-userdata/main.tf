@@ -10,7 +10,7 @@ module "ec2_instance" {
 
   ami                    = "ami-0e472ba40eb589f49"
   instance_type          = "t2.micro"
-  key_name               = "route53"
+  key_name               = "terraform"
   monitoring             = true
   vpc_security_group_ids = ["sg-0a795913fa0d78322"]
   subnet_id              = "subnet-0ac4be71aa723b6f6"
