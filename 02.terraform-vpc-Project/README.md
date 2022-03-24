@@ -1,3 +1,8 @@
+Provisioning Project infrastructure using AWS CloudFormation
+![image](https://user-images.githubusercontent.com/97225776/159889331-aa3e9fc8-8c1b-43ce-9a56-3233e059c881.png)
+
+
+
 Terraform installation
 Step1- Register HashiCorp GPG keys$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 $ sudo apt install curl
