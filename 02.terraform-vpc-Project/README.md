@@ -21,8 +21,6 @@ $ terraform –v
 # Install AWS_CLI
 apt install awscli
 
-![image](https://user-images.githubusercontent.com/97225776/152717887-64f9f344-3400-497d-97b9-2a3d6abc962d.png)
-
 
 # AWS VPC Creation with Terraform
 This project will create a VCP with Internet Gateway, subnets accross 2 AZs: one public
