@@ -1,6 +1,4 @@
-Provisioning Project infrastructure using AWS CloudFormation
-![image](https://user-images.githubusercontent.com/97225776/159889331-aa3e9fc8-8c1b-43ce-9a56-3233e059c881.png)
-
+Provisioning Project infrastructure using  Terraform
 
 
 Terraform installation
