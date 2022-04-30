@@ -8,11 +8,11 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-0e472ba40eb589f49"
+  ami                    = "ami-04505e74c0741db8d"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "vpectesting"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0a795913fa0d78322"]
+  vpc_security_group_ids = ["sg-026e6de718633f70f"]
   subnet_id              = "subnet-0ac4be71aa723b6f6"
     user_data = <<-EOF
               #!/bin/bash
@@ -21,9 +21,8 @@ module "ec2_instance" {
               EOF
 
   tags = {
-    Name = "terraform-example"
+    Name = "terraform-instance"
     Terraform   = "true"
     Environment = "dev"
   }
 }
-
