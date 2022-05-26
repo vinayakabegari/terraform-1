@@ -14,12 +14,7 @@ module "ec2_instance" {
   monitoring             = true
   vpc_security_group_ids = ["sg-026e6de718633f70f"]
   subnet_id              = "subnet-0ac4be71aa723b6f6"
-    user_data = <<-EOF
-              #!/bin/bash
-              echo "Hello, World" > index.html
-              nohup busybox httpd -f -p 8080 &
-              EOF
-
+  
   tags = {
     Name = "terraform-instance"
     Terraform   = "true"
