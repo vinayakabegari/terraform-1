@@ -8,12 +8,13 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-0022f774911c1d690"
+  ami                    = "ami-08d4ac5b634553e16"
   instance_type          = "t2.micro"
-  key_name               = "terraform"
+  key_name               = "raj"
   monitoring             = true
-  vpc_security_group_ids = ["sg-020d448c9c2494131"]
-  subnet_id              = "subnet-09944b8728c9c3b55"
+  vpc_security_group_ids = ["sg-05d87627302d7cacf"]
+  subnet_id              = "subnet-0eeab5f36f7bb0853"
+
   
   tags = {
     Name = "terraform-instance"
@@ -25,7 +26,7 @@ module "ec2_instance" {
 terraform {
   backend "s3" {
     encrypt = true
-    bucket = "my-terraform-state-s3test"
+    bucket = "rajutestwebsite16"
     region = "us-east-1"
     key = "terraform-state/terraform.tfstate"
   }
