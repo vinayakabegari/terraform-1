@@ -26,7 +26,7 @@ module "ec2_instance" {
 terraform {
   backend "s3" {
     encrypt = true
-    bucket = "rajutestwebsite16"
+    bucket = "srimanoutput"
     region = "us-east-1"
     key = "terraform-state/terraform.tfstate"
   }
