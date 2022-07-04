@@ -1,27 +1,26 @@
 Provisioning Project infrastructure using  Terraform
 
+How to Install Terraform on Ubuntu/Debian using APT
 
-Terraform installation
-Step1- Register HashiCorp GPG keys$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+Add the Hashicorp signing key in Ubuntu/Debian
 
-sudo apt install curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 
-Step2- Add HashiCorp package repository
-After adding the gpg key successfully. You need to add the HashiCorp repository to download and install terraform packages using apt.
+Add the Hashicorp official apt reposity
 
 sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 
-Step3- Update "Ubuntu" packages list
-
-sudo apt update
-
-Step4- Install Terraform on Ubuntu
+Install the latest version of terraform on ubuntu/terraform
 
 sudo apt install terraform
 
-# Check version of Terraform 
+To check current and all versions of terraform
 
-terraform –v
+apt policy terraform
+
+select the specific terraform version and install it
+
+sudo apt install terraform=0.14.0
 
 
 # Install AWS_CLI
