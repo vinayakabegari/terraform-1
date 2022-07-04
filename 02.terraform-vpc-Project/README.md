@@ -8,17 +8,19 @@ $ sudo apt install curl
 Step2- Add HashiCorp package repository
 After adding the gpg key successfully. You need to add the HashiCorp repository to download and install terraform packages using apt.
 
-$ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 
 Step3- Update "Ubuntu" packages list
-$ sudo apt update
+
+sudo apt update
 
 Step4- Install Terraform on Ubuntu
 
-$ sudo apt install terraform
+sudo apt install terraform
 
 # Check version of Terraform 
-$ terraform –v
+
+terraform –v
 
 
 # Install AWS_CLI
