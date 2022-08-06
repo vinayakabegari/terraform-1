@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 module "ec2_instance" {
@@ -8,12 +8,12 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-08d4ac5b634553e16"
+  ami                    = "ami-068257025f72f470d"
   instance_type          = "t2.micro"
-  key_name               = "raj"
+  key_name               = "tf"
   monitoring             = true
-  vpc_security_group_ids = ["sg-05d87627302d7cacf"]
-  subnet_id              = "subnet-0eeab5f36f7bb0853"
+  vpc_security_group_ids = ["sg-0dc1c9f6fcfb14769"]
+  subnet_id              = "subnet-01b8c78bcb4752487"
 
   
   tags = {
@@ -27,7 +27,7 @@ terraform {
   backend "s3" {
     encrypt = true
     bucket = "srimanoutput"
-    region = "us-east-1"
+    region = "ap-south-1"
     key = "terraform-state/terraform.tfstate"
   }
 }
