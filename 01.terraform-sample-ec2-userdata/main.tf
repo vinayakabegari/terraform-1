@@ -26,7 +26,7 @@ module "ec2_instance" {
 terraform {
   backend "s3" {
     encrypt = true
-    bucket = "srimanoutput"
+    bucket = "vkaoutput"
     region = "ap-south-1"
     key = "terraform-state/terraform.tfstate"
   }
