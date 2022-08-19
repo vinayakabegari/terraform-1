@@ -6,6 +6,6 @@ variable "namespace" {
 
 variable "region" {
   description = "AWS region"
-  default     = "ap-south-1"
+  default     = "us-east-1"
   type        = string
 }
