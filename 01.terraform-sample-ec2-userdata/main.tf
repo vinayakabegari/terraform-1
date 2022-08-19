@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 module "ec2_instance" {
@@ -27,7 +27,7 @@ terraform {
   backend "s3" {
     encrypt = true
     bucket = "vkaoutput"
-    region = "ap-south-1"
+    region = "us-east-1"
     key = "terraform-state/terraform.tfstate"
   }
 }
