@@ -10,10 +10,10 @@ module "ec2_instance" {
 
   ami                    = "ami-062df10d14676e201"
   instance_type          = "t2.micro"
-  key_name               = "terraform-key"
+  key_name               = "tf-key"
   monitoring             = true
-  vpc_security_group_ids = ["sg-0f4280f8a1b1411c7"]
-  subnet_id              = "subnet-0bf448f24f9309d84"
+  vpc_security_group_ids = ["sg-0b6901944a034880c"]
+  subnet_id              = "subnet-06372aa8e3da64a15"
 
   
   tags = {
